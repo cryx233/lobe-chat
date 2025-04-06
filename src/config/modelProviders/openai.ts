@@ -6,6 +6,37 @@ const OpenAI: ModelProviderCard = {
     {
       contextWindowTokens: 128_000,
       description:
+        'GPT-4.5 的研究预览版，它是我们迄今为止最大、最强大的 GPT 模型。它拥有广泛的世界知识，并能更好地理解用户意图，使其在创造性任务和自主规划方面表现出色。GPT-4.5 可接受文本和图像输入，并生成文本输出（包括结构化输出）。支持关键的开发者功能，如函数调用、批量 API 和流式输出。在需要创造性、开放式思考和对话的任务（如写作、学习或探索新想法）中，GPT-4.5 表现尤为出色。知识截止日期为 2023 年 10 月。',
+      displayName: 'GPT-4.5 Preview',
+      enabled: true,
+      functionCall: true,
+      id: 'gpt-4.5-preview',
+      maxOutput: 16_384,
+      pricing: {
+        input: 75,
+        output: 150,
+      },
+      releasedAt: '2025-02-27',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 200_000,
+      description:
+        'o3-mini 是我们最新的小型推理模型，在与 o1-mini 相同的成本和延迟目标下提供高智能。',
+      displayName: 'OpenAI o3-mini',
+      enabled: true,
+      functionCall: true,
+      id: 'o3-mini',
+      maxOutput: 100_000,
+      pricing: {
+        input: 1.1,
+        output: 4.4,
+      },
+      releasedAt: '2025-01-31',
+    },
+    {
+      contextWindowTokens: 128_000,
+      description:
         'o1-mini是一款针对编程、数学和科学应用场景而设计的快速、经济高效的推理模型。该模型具有128K上下文和2023年10月的知识截止日期。',
       displayName: 'OpenAI o1-mini',
       enabled: true,
