@@ -4,6 +4,88 @@ import { ModelProviderCard } from '@/types/llm';
 const OpenAI: ModelProviderCard = {
   chatModels: [
     {
+      contextWindowTokens: 200_000,
+      description:
+        'o3 是一款全能强大的模型，在多个领域表现出色。它为数学、科学、编程和视觉推理任务树立了新标杆。它也擅长技术写作和指令遵循。用户可利用它分析文本、代码和图像，解决多步骤的复杂问题。',
+      displayName: 'o3',
+      enabled: true,
+      functionCall: true,
+      id: 'o3',
+      maxOutput: 100_000,
+      pricing: {
+        cachedInput: 2.5,
+        input: 10,
+        output: 40,
+      },
+      releasedAt: '2025-04-17',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 200_000,
+      description:
+        'o3-mini 是我们最新的小型推理模型，在与 o1-mini 相同的成本和延迟目标下提供高智能。',
+      displayName: 'OpenAI o3-mini',
+      enabled: true,
+      functionCall: true,
+      id: 'o3-mini',
+      maxOutput: 100_000,
+      pricing: {
+        input: 1.1,
+        output: 4.4,
+      },
+      releasedAt: '2025-01-31',
+    },
+    {
+      contextWindowTokens: 200_000,
+      description:
+        'o4-mini 是我们最新的小型 o 系列模型。 它专为快速有效的推理而优化，在编码和视觉任务中表现出极高的效率和性能。',
+      displayName: 'o4-mini',
+      enabled: true,
+      functionCall: true,
+      id: 'o4-mini',
+      maxOutput: 100_000,
+      pricing: {
+        cachedInput: 0.275,
+        input: 1.1,
+        output: 4.4,
+      },
+      releasedAt: '2025-04-17',
+      vision: true,
+    },
+    {
+       contextWindowTokens: 128_000,
+       description:
+         'GPT-4.5 的研究预览版，它是我们迄今为止最大、最强大的 GPT 模型。它拥有广泛的世界知识，并能更好地理解用户意图，使其在创造性任务和自主规划方面表现出色。GPT-4.5 可接受文本和图像输入，并生成文本输出（包括结构化输出）。支持关键的开发者功能，如函数调用、批量 API 和流式输出。在需要创造性、开放式思考和对话的任务（如写作、学习或探索新想法）中，GPT-4.5 表现尤为出色。知识截止日期为 2023 年 10 月。',
+       displayName: 'GPT-4.5 Preview',
+       enabled: true,
+       functionCall: true,
+       id: 'gpt-4.5-preview',
+       maxOutput: 16_384,
+       pricing: {
+         input: 75,
+         output: 150,
+       },
+       releasedAt: '2025-02-27',
+       vision: true,
+     },
+     {
+       contextWindowTokens: 1_047_576,
+       description:
+         'GPT-4.1 是我们用于复杂任务的旗舰模型。它非常适合跨领域解决问题。',
+       displayName: 'GPT-4.1',
+       enabled: true,
+       functionCall: true,
+       id: 'gpt-4.1',
+       maxOutput: 32_768,
+       pricing: {
+         cachedInput: 0.5,
+         input: 2,
+         output: 8,
+       },
+       releasedAt: '2025-04-14',
+       vision: true,
+     },
+    {
       contextWindowTokens: 1_047_576,
       description:
         'GPT-4.1 mini 提供了智能、速度和成本之间的平衡，使其成为许多用例中有吸引力的模型。',
