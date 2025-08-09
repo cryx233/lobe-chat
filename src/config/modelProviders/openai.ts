@@ -14,9 +14,11 @@ const OpenAI: ModelProviderCard = {
       id: 'gpt-5',
       maxOutput: 128_000,
       pricing: {
-        cachedInput: 0.13,
-        input: 1.25,
-        output: 10,
+        units: [
+          { name: 'textInput', rate: 1.25, strategy: 'fixed', unit: 'millionTokens' },
+          { name: 'textOutput', rate: 10, strategy: 'fixed', unit: 'millionTokens' },
+          { name: 'textInput_cacheRead', rate: 0.13, strategy: 'fixed', unit: 'millionTokens' },
+        ],
       },
       releasedAt: '2025-08-07',
       vision: true,
