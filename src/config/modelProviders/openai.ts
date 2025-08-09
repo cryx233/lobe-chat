@@ -7,7 +7,7 @@ const OpenAI: ModelProviderCard = {
     {
       contextWindowTokens: 400_000,
       description:
-        '跨领域编码和代理任务的最佳模型。GPT-5 在准确性、速度、推理、上下文识别、结构化思维和问题解决方面实现了飞跃。',,
+        '跨领域编码和代理任务的最佳模型。GPT-5 在准确性、速度、推理、上下文识别、结构化思维和问题解决方面实现了飞跃。',
       displayName: 'GPT-5',
       enabled: true,
       functionCall: true,
