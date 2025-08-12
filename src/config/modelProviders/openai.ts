@@ -7,6 +7,54 @@ const OpenAI: ModelProviderCard = {
     {
       contextWindowTokens: 400_000,
       description:
+        '跨领域编码和代理任务的最佳模型。GPT-5 在准确性、速度、推理、上下文识别、结构化思维和问题解决方面实现了飞跃。',
+      displayName: 'GPT-5',
+      enabled: true,
+      functionCall: true,
+      id: 'gpt-5',
+      maxOutput: 128_000,
+      releasedAt: '2025-08-07',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 1_047_576,
+      description:
+        'GPT-4.1 是我们用于复杂任务的旗舰模型。它非常适合跨领域解决问题。',
+      displayName: 'GPT-4.1',
+      enabled: true,
+      functionCall: true,
+      id: 'gpt-4.1',
+      maxOutput: 32_768,
+      releasedAt: '2025-04-14',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 200_000,
+      description:
+        'o3 是一款全能强大的模型，在多个领域表现出色。它为数学、科学、编程和视觉推理任务树立了新标杆。它也擅长技术写作和指令遵循。用户可利用它分析文本、代码和图像，解决多步骤的复杂问题。',
+      displayName: 'o3',
+      enabled: true,
+      functionCall: true,
+      id: 'o3',
+      maxOutput: 100_000,
+      releasedAt: '2025-04-17',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 200_000,
+      description:
+        'o4-mini 是我们最新的小型 o 系列模型。 它专为快速有效的推理而优化，在编码和视觉任务中表现出极高的效率和性能。',
+      displayName: 'o4-mini',
+      enabled: true,
+      functionCall: true,
+      id: 'o4-mini',
+      maxOutput: 100_000,
+      releasedAt: '2025-04-17',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 400_000,
+      description:
         '更快、更经济高效的 GPT-5 版本，适用于明确定义的任务。在保持高质量输出的同时，提供更快的响应速度。',
       displayName: 'GPT-5 mini',
       enabled: true,
